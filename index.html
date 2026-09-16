@@ -1,1 +1,842 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#08111a"
+  >
+
+  <meta
+    name="description"
+    content="Lucas.Dev — Portfólio de desenvolvedor em formação."
+  >
+
+  <title>Lucas.Dev 🏁 | Piston Cup</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       LOADER
+  ====================================================== -->
+
+  <div class="loader" id="loader">
+
+    <div class="loader-car">
+      🏎️
+    </div>
+
+    <div class="loader-text">
+      PREPARANDO O MOTOR...
+    </div>
+
+    <div class="loader-line">
+      <span></span>
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+
+  <header class="navbar" id="navbar">
+
+    <a href="#inicio" class="logo">
+      LUCAS<span>.DEV</span> <b>🏁</b>
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="#inicio" class="active">
+        INÍCIO
+      </a>
+
+      <a href="#sobre">
+        PILOTO
+      </a>
+
+      <a href="#projetos">
+        PROJETOS
+      </a>
+
+      <a href="#habilidades">
+        GARAGEM
+      </a>
+
+      <a href="#contato">
+        CONTATO
+      </a>
+
+    </nav>
+
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Abrir menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero" id="inicio">
+
+      <!-- CENÁRIO DA CORRIDA -->
+      <canvas id="raceCanvas"></canvas>
+
+      <div class="hero-overlay"></div>
+
+      <div class="speed-lines"></div>
+
+
+      <!-- CONTEÚDO PRINCIPAL -->
+
+      <div class="hero-content">
+
+        <div class="race-number">
+          <span>NO.</span> 95
+        </div>
+
+        <p class="eyebrow">
+          <span></span>
+          DESENVOLVEDOR EM FORMAÇÃO
+        </p>
+
+        <h1>
+          LUCAS<strong>.DEV</strong>
+        </h1>
+
+        <div class="hero-divider"></div>
+
+        <p class="hero-description">
+          Transformando ideias em projetos,
+          uma linha de código por vez.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="#projetos"
+            class="btn btn-primary"
+          >
+            VER PROJETOS
+            <span>→</span>
+          </a>
+
+          <a
+            href="#contato"
+            class="btn btn-outline"
+          >
+            ENTRAR EM CONTATO
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- VELOCÍMETRO -->
+
+      <div class="speedometer">
+
+        <div class="speed-ring">
+
+          <span
+            class="speed-number"
+            id="speedNumber"
+          >
+            095
+          </span>
+
+          <small>
+            KM/H
+          </small>
+
+        </div>
+
+        <div class="speed-label">
+          VELOCIDADE
+        </div>
+
+      </div>
+
+
+      <!-- INFORMAÇÕES DA PISTA -->
+
+      <div class="track-info">
+
+        <span>
+          TRACK 01
+        </span>
+
+        <strong>
+          RADIATOR ROAD
+        </strong>
+
+        <small>
+          36° 12' 04" N
+        </small>
+
+      </div>
+
+
+      <!-- SCROLL -->
+
+      <div class="scroll-indicator">
+
+        <span>
+          ROLE PARA ACELERAR
+        </span>
+
+        <div class="scroll-wheel"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SOBRE
+    ====================================================== -->
+
+    <section
+      class="about section"
+      id="sobre"
+    >
+
+      <div class="section-number">
+        01
+      </div>
+
+      <div class="section-heading">
+
+        <p>
+          QUEM ESTÁ AO VOLANTE
+        </p>
+
+        <h2>
+          O PILOTO
+        </h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <!-- CARD -->
+
+        <div class="about-card">
+
+          <div class="license">
+
+            <span>
+              DRIVER LICENSE
+            </span>
+
+            <strong>
+              LD-095
+            </strong>
+
+            <small>
+              LUCAS DANIEL
+            </small>
+
+          </div>
+
+          <div class="checkered"></div>
+
+        </div>
+
+
+        <!-- TEXTO -->
+
+        <div class="about-text">
+
+          <p class="big-text">
+            Meu combustível é
+            <span>curiosidade.</span>
+          </p>
+
+          <p>
+            Sou um desenvolvedor em formação,
+            aprendendo programação e construindo
+            projetos para transformar ideias em
+            experiências reais na web.
+          </p>
+
+          <p>
+            Atualmente estudo HTML, CSS,
+            JavaScript e Python, enquanto
+            desenvolvo meu portfólio e novos
+            projetos.
+          </p>
+
+          <a
+            href="#contato"
+            class="text-link"
+          >
+            CONHECER O PILOTO →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJETOS
+    ====================================================== -->
+
+    <section
+      class="projects section"
+      id="projetos"
+    >
+
+      <div class="section-number">
+        02
+      </div>
+
+      <div class="section-heading">
+
+        <p>
+          BOX DE PROJETOS
+        </p>
+
+        <h2>
+          MINHAS CORRIDAS
+        </h2>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+
+        <!-- =================================================
+             ADOTAÊ
+        ================================================== -->
+
+        <article class="project-card featured">
+
+          <div class="project-top">
+
+            <span>
+              PROJETO 01
+            </span>
+
+            <span>
+              WEB
+            </span>
+
+          </div>
+
+
+          <div class="project-visual adotae-visual">
+
+            <div class="road-mini"></div>
+
+            <div class="project-car">
+              🏎️
+            </div>
+
+            <div class="project-sun"></div>
+
+          </div>
+
+
+          <div class="project-info">
+
+            <div>
+
+              <h3>
+                ADOTAÊ
+              </h3>
+
+              <p>
+                Projeto web criado para facilitar
+                a conexão entre pessoas e animais
+                que precisam de um novo lar.
+              </p>
+
+            </div>
+
+
+            <a
+              href="https://lucas248-art.github.io/ADOTA-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-button"
+            >
+              VER PROJETO ↗
+            </a>
+
+          </div>
+
+
+          <div class="project-tags">
+
+            <span>
+              HTML
+            </span>
+
+            <span>
+              CSS
+            </span>
+
+            <span>
+              JAVASCRIPT
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJETO 02
+        ================================================== -->
+
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <span>
+              PROJETO 02
+            </span>
+
+            <span>
+              EM BREVE
+            </span>
+
+          </div>
+
+
+          <div class="project-visual garage-visual">
+
+            <div class="garage-light"></div>
+
+            <div class="garage-sign">
+              L.D
+            </div>
+
+            <div class="tools">
+              ⚙️
+            </div>
+
+          </div>
+
+
+          <div class="project-info">
+
+            <div>
+
+              <h3>
+                PRÓXIMA CORRIDA
+              </h3>
+
+              <p>
+                Uma nova criação está sendo
+                preparada na garagem.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-tags">
+
+            <span>
+              EM BREVE
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJETO 03
+        ================================================== -->
+
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <span>
+              PROJETO 03
+            </span>
+
+            <span>
+              CONCEITO
+            </span>
+
+          </div>
+
+
+          <div class="project-visual night-visual">
+
+            <div class="moon"></div>
+
+            <div class="night-car">
+              🏎️
+            </div>
+
+            <div class="stars">
+              ✦ ✧ ✦
+            </div>
+
+          </div>
+
+
+          <div class="project-info">
+
+            <div>
+
+              <h3>
+                NIGHT RACE
+              </h3>
+
+              <p>
+                Conceito experimental para uma
+                futura experiência interativa.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-tags">
+
+            <span>
+              JAVASCRIPT
+            </span>
+
+            <span>
+              ANIMAÇÃO
+            </span>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HABILIDADES
+    ====================================================== -->
+
+    <section
+      class="skills section"
+      id="habilidades"
+    >
+
+      <div class="section-number">
+        03
+      </div>
+
+      <div class="section-heading">
+
+        <p>
+          EQUIPAMENTOS
+        </p>
+
+        <h2>
+          GARAGEM
+        </h2>
+
+      </div>
+
+
+      <div class="garage-grid">
+
+
+        <div class="skill-item">
+
+          <div class="skill-icon">
+            &lt;/&gt;
+          </div>
+
+          <div>
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              HTML
+            </h3>
+
+            <p>
+              Estrutura e semântica web.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <div class="skill-icon">
+            #
+          </div>
+
+          <div>
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              CSS
+            </h3>
+
+            <p>
+              Interfaces, responsividade
+              e animações.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <div class="skill-icon">
+            JS
+          </div>
+
+          <div>
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              JAVASCRIPT
+            </h3>
+
+            <p>
+              Interações e experiências
+              dinâmicas.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <div class="skill-icon">
+            Py
+          </div>
+
+          <div>
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              PYTHON
+            </h3>
+
+            <p>
+              Programação e lógica.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <div class="skill-icon">
+            GH
+          </div>
+
+          <div>
+
+            <span>
+              05
+            </span>
+
+            <h3>
+              GITHUB
+            </h3>
+
+            <p>
+              Versionamento e projetos.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="skill-item">
+
+          <div class="skill-icon">
+            V
+          </div>
+
+          <div>
+
+            <span>
+              06
+            </span>
+
+            <h3>
+              VERCEL
+            </h3>
+
+            <p>
+              Deploy e publicação web.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTATO
+    ====================================================== -->
+
+    <section
+      class="contact section"
+      id="contato"
+    >
+
+      <div class="contact-road"></div>
+
+
+      <div class="contact-content">
+
+        <p class="eyebrow">
+          ÚLTIMA PARADA
+        </p>
+
+        <h2>
+          VAMOS
+          <span>CORRER?</span>
+        </h2>
+
+        <p>
+          Tem uma ideia, projeto ou simplesmente
+          quer trocar uma ideia sobre tecnologia?
+        </p>
+
+
+        <div class="contact-buttons">
+
+          <a
+            href="mailto:seuemail@email.com"
+            class="btn btn-primary"
+          >
+            ENVIAR E-MAIL →
+          </a>
+
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            GITHUB
+          </a>
+
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            INSTAGRAM
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="finish-line"></div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    <div class="footer-logo">
+      LUCAS<span>.DEV</span> 🏁
+    </div>
+
+    <p>
+      FEITO COM CÓDIGO, CAFÉ E UM POUCO DE GASOLINA.
+    </p>
+
+    <span>
+      © 2026 Lucas.Dev
+    </span>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+          </html>
